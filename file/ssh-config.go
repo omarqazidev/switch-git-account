@@ -19,7 +19,6 @@ func CreateSshConfig(sshFilename string) error {
 Host github.com
 	HostName github.com
 	User git
-	UseKeychain yes
    	AddKeysToAgent yes
 	IdentityFile ~/.ssh/`
 

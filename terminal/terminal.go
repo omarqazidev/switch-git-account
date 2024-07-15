@@ -17,32 +17,32 @@ func Menu() {
 		fmt.Print("\n\n____________ SWITCH GIT ACCOUNT ____________\n\n")
 
 		fmt.Println("\nWhat do you want to do?")
-		fmt.Println("\n\t1. Add Git Account")
-		fmt.Println("\t2. Remove Git Account")
-		fmt.Println("\t3. Change Git Account")
-		fmt.Println("\t4. List Git Accounts")
+		fmt.Println("\n\t1. Change Git Account")
+		fmt.Println("\t2. List Git Accounts")
+		fmt.Println("\t3. Add Git Account")
+		fmt.Println("\t4. Remove Git Account")
 		fmt.Print("\n\t0. Exit\n\n")
 
 		var choice string
 		getInput("Enter your choice: ", &choice)
 
 		if choice == "1" {
-			AddAccount()
-			pause("\nPress Enter to continue...")
-		}
-
-		if choice == "2" {
-			RemoveAccount()
-			pause("\nPress Enter to continue...")
-		}
-
-		if choice == "3" {
 			ChooseAccount()
 			pause("\nPress Enter to continue...")
 		}
 
-		if choice == "4" {
+		if choice == "2" {
 			ListAccounts()
+			pause("\nPress Enter to continue...")
+		}
+
+		if choice == "3" {
+			AddAccount()
+			pause("\nPress Enter to continue...")
+		}
+
+		if choice == "4" {
+			RemoveAccount()
 			pause("\nPress Enter to continue...")
 		}
 
