@@ -140,7 +140,7 @@ func ChooseAccount() error {
 	for {
 		var indexString string
 
-		getInput("\nEnter the index of the account you want to remove: (-1 to exit): ", &indexString)
+		getInput("\nEnter the index of the account you want to switch to: (-1 to exit): ", &indexString)
 
 		index, err := strconv.Atoi(indexString)
 
@@ -158,6 +158,18 @@ func ChooseAccount() error {
 			account := gitAccounts[index-1]
 
 			err := SetGitDefaults(account.Username, account.Email)
+
+			if err != nil {
+				fmt.Println("Error setting git defaults:", err)
+				return err
+			}
+
+			err = AddSshKey(account.SSHFileName)
+
+			if err != nil {
+				fmt.Println("Error adding ssh key to ssh-agent:", err)
+				return err
+			}
 
 			if err != nil {
 				fmt.Println("Error setting git defaults:", err)
