@@ -30,4 +30,4 @@ Here silly. :)
 
 ## Future plans:
 - **Git Account Localization:** Add options for path specific git accounts
-- **CLI to TUI:** Beaitify the CLI tool using the [Charm](https://github.com/charmbracelet) ecosystem.
+- **CLI to TUI:** Beautify the CLI tool using the [Charm](https://github.com/charmbracelet) ecosystem.
