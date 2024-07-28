@@ -5,14 +5,14 @@
 ## What:
 A CLI tool to switch between multiple Git accounts on the same computer.
 
-## What it does:
-1. Add Git Account
-2. Remove Git Account
-3. List Git Accounts
-4. Switch Git Account
-
 ## Why:
 After struggling with countless online solutions for managing multiple Git accounts on one computer, I decided to tackle the problem myself.
+
+## What it does:
+- Add Git Account
+- Remove Git Account
+- List Git Accounts
+- Switch Git Account
 
 ## How:
 - Backs up previous ssh config file
@@ -21,8 +21,8 @@ After struggling with countless online solutions for managing multiple Git accou
 - Adds $10m to your bank account
 
 ## How to use:
-- Go to git repo (link on next page)
-- Download platform spefic release
+- Go to [releases](https://github.com/omarqazidev/switch-git-account/releases)
+- Download platform spefic executable release
 - Profit
 
 ## Where:
