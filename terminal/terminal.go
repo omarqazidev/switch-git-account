@@ -171,11 +171,6 @@ func ChooseAccount() error {
 				return err
 			}
 
-			if err != nil {
-				fmt.Println("Error setting git defaults:", err)
-				return err
-			}
-
 			fmt.Println("")
 			err = file.BackupExistingSshConfig()
 
