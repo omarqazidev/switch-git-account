@@ -53,10 +53,6 @@ func Menu() {
 }
 
 func AddAccount() {
-	// fmt.Print("\n_____________________________________________\n\n")
-
-	//fmt.Print("\n\t\tAdd Git Account\n\n")
-
 	fmt.Print("\n\n______________ ADD GIT ACCOUNT ______________\n\n")
 
 	gitAccounts := []gitaccount.GitAccountDetails{}
@@ -67,8 +63,6 @@ func AddAccount() {
 	getInput("\tEnter your Username:\t\t", &newGitAccount.Username)
 	getInput("\tEnter your Email:\t\t", &newGitAccount.Email)
 	getInput("\tEnter your Git SSH file name:\t", &newGitAccount.SSHFileName)
-
-	// fmt.Print("\nAdding account with username: ", newGitAccount.Username)
 
 	err := file.ReadJsonFile("git-accounts.json", &gitAccounts)
 
@@ -208,8 +202,6 @@ func ListAccounts() []gitaccount.GitAccountDetails {
 }
 
 func FetchAccounts() []gitaccount.GitAccountDetails {
-	// fmt.Println("FETCH GIT ACCOUNTS")
-
 	gitAccounts := []gitaccount.GitAccountDetails{}
 
 	err := file.ReadJsonFile("git-accounts.json", &gitAccounts)
