@@ -158,13 +158,6 @@ func ChooseAccount() error {
 				return err
 			}
 
-			err = AddSshKey(account.SSHFileName)
-
-			if err != nil {
-				fmt.Println("Error adding ssh key to ssh-agent:", err)
-				return err
-			}
-
 			fmt.Println("")
 			err = file.BackupExistingSshConfig()
 
