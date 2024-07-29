@@ -192,8 +192,6 @@ func ChooseAccount() error {
 }
 
 func ListAccounts() []gitaccount.GitAccountDetails {
-	// fmt.Println("LIST GIT ACCOUNTS")
-
 	gitAccounts := FetchAccounts()
 
 	DisplayAccounts(gitAccounts)
